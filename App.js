@@ -38,7 +38,7 @@ export default class Appmain extends Component {
   }
   login() {
     let that = this
-    let url = 'https://api.nasa.gov/neo/rest/v1/neo/' + this.state.idValue + '?api_key=HOJvGXEfD2vhNIqclIP2YCpQdZKvUQrkoBLf8N2U'
+    let url = 'https://api.nasa.gov/neo/rest/v1/neo/' + this.state.idValue + '?api_key=DcLz3Uela0qhvmE6Z2RM9nTs7UTWA8GtFKrcAzY2'
 
     axios.get(url)
       .then(function (response) {
@@ -61,14 +61,21 @@ export default class Appmain extends Component {
         })
       })
       .catch(function (error) {
+        alert("Please Enter correct Asteroid ID ")
+        that.setState({
+          idValue: '',
+          disabledButton: true
+        })
         console.log(error);
       });
 
   }
 
   random() {
+    // HOJvGXEfD2vhNIqclIP2YCpQdZKvUQrkoBLf8N2U
+
     let that = this
-    let url = 'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=HOJvGXEfD2vhNIqclIP2YCpQdZKvUQrkoBLf8N2U'
+    let url = 'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DcLz3Uela0qhvmE6Z2RM9nTs7UTWA8GtFKrcAzY2'
     axios.get(url)
       .then(function (response) {
         let data = response.data.near_earth_objects;
@@ -80,6 +87,7 @@ export default class Appmain extends Component {
 
       })
       .catch(function (error) {
+        alert()
         console.log(error);
       });
   }
@@ -88,7 +96,7 @@ export default class Appmain extends Component {
   render() {
 
     return (
-      <View style={{ padding: 30 }}>
+      <View style={{ padding: 30, marginTop: 40 }}>
         {!this.state.afterSuccesLogin ? <View>
           <TextInput
             style={styles.inputTypeCss}
@@ -146,7 +154,8 @@ const styles = StyleSheet.create({
     height: 50,
     borderColor: 'gray',
     borderWidth: 1,
-    marginBottom: 10
+    marginBottom: 10,
+    padding: 5
   },
   marg10: {
     margin: 10

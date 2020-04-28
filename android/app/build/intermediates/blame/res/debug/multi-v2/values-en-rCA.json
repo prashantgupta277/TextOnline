@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Projects/ReactNative/testdemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/mac/Projects/ReactNative/mytestdemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/524d018844086b7fae295036d031aaa4/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/ea8b792c55430366d1d40c4c479b9b76/appcompat-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/a88d4fa3f969c9928032629b14d6e1b2/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/edd971ee47321ae57a52f267114991a7/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
